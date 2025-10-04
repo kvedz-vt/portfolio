@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" />
+  <title>Kevin Caldwell</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+  <nav>
+    <div class="nav-container">
+      <div class="logo" data-aos="zoom-in" data-aos-duration="1000">
+        <span>Kevin Caldwell</span>
+      </div>
+      <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+    </div>
+  </nav>
+
+  <section>
+    <div class="main-container">
+      <div class="image" data-aos="zoom-in-right" data-aos-duration="2500">
+        <img src="main.png" alt="">
+      </div>
+
+      <div class="content">
+        <h1 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="800">
+          Hey I'm <span>Kevin</span>
+        </h1>
+
+        <!-- REPLACEMENT: no typewriter, just static line -->
+        <h2 class="subtitle" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="900">
+          I'm an <span class="highlight">Aspiring F1 Engineer</span>
+        </h2>
+
+        <p data-aos="flip-up" data-aos-duration="1000" data-aos-delay="1000">
+            I love building things that move — from designing and creating my own go-kart, to rebuilding a Hydrostream AE-21 boat
+            with hand-drawn support blueprints, to fabricating custom parts for my 1990 Honda Civic track build. 
+            Engineering, fabrication, and performance drive everything I do.
+        </p>
+
+        <div class="social-links" data-aos="flip-down" data-aos-duration="1000" data-aos-delay="1200">
+        <a href="https://github.com/kvedz-vt" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-github"></i>
+        </a>
+        <a href="https://www.facebook.com/kevin.caldwell.148553" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-facebook"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/kevin-caldwell-58635b217" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-linkedin"></i>
+        </a>
+        <a href="https://x.com/kevxzr" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-x-twitter"></i>
+        </a>
+        </div>
+
+        <div class="btn" data-aos="zoom-out-left" data-aos-duration="1000" data-aos-delay="1300">
+        <a href="https://github.com/kvedz-vt/Resume/blob/main/Kevin_Caldwell_Resume.pdf" 
+            download="Kevin_Caldwell_Resume.pdf" 
+            target="_blank" 
+            rel="noopener noreferrer">
+            <button>Download CV</button>
+        </a>
+        </div>
+        <div class="btn" data-aos="zoom-out-left" data-aos-duration="1000" data-aos-delay="1300">
+          <button>Portfolio (Coming Soon)</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>AOS.init({ offset: 0 });</script>
+  <script>
+    function hamburg(){
+      const navbar = document.querySelector(".dropdown");
+      if (navbar) navbar.style.transform = "translateY(0px)";
+    }
+    function cancel(){
+      const navbar = document.querySelector(".dropdown");
+      if (navbar) navbar.style.transform = "translateY(-500px)";
+    }
+  </script>
+</body>
+</html>
